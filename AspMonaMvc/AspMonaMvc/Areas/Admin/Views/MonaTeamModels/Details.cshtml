@@ -1,0 +1,43 @@
+﻿@model AspMonaMvc.Models.MonaTeamModel
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MonaTeamModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TeamImagesDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TeamImagesDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NameTeam)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NameTeam)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.statusTeam)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.statusTeam)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

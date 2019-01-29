@@ -1,0 +1,51 @@
+﻿@model AspMonaMvc.Models.ContactDetalis
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ContactDetalis</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ContactDetaliss)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContactDetaliss)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Reception)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Reception)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Booking)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Booking)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.President)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.President)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,67 @@
+﻿@model AspMonaMvc.Models.ImageContent
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ImageContent</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ClientsFedbackModels.ClientName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClientsFedbackModels.ClientName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HomePageChange.Facebook)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HomePageChange.Facebook)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LatestNewsContent.NewsImageUrl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LatestNewsContent.NewsImageUrl)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ModellsChange.ModelFullName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModellsChange.ModelFullName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MonaTeamModel.TeamImagesDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MonaTeamModel.TeamImagesDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImageUrlName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImageUrlName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

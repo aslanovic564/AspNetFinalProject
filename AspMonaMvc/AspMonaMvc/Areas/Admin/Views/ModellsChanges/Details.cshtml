@@ -1,0 +1,43 @@
+﻿@model AspMonaMvc.Models.ModellsChange
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ModellsChange</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ModelCategory.CategoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModelCategory.CategoryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ModelFullName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModelFullName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FigurStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FigurStatus)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
